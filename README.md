@@ -10,7 +10,6 @@ Business Central offers two ways to import bank statements:
 • Convert a bank statement file, from any format, to a data stream that you can import. For more information, see [Set Up the Bank Data Conversion Service]( https://docs.microsoft.com/en-us/dynamics365/business-central/bank-how-setup-bank-data-conversion-service).
 • Import bank statements as a bank feed by setting up and enabling Envestnet Yodlee Bank Feed service, and then linking bank accounts to the related online bank accounts.
 
-> [!Note] 
 > The Envestnet Yodlee Bank Feed service available only in the United States, Canada, and the United Kingdom. However, for the UK the extension will only support bank statements from banks that do not support open API standards. That is, they still support screen scraping.  
 
 ## Setting Up Data Exchange Definitions
