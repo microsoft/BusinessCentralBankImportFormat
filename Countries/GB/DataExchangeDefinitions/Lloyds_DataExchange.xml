@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <DataExchDef Code="LLOYDS" Name="LLoyds Bank Statement" Type="0" ReadingWritingXMLport="1220" ExternalDataHandlingCodeunit="1240" HeaderLines="2" FileType="1">
+    <DataExchLineDef LineType="0" Code="LLOYDS_DET" Name="LLoyds Line Detail" ColumnCount="8">
+      <DataExchColumnDef ColumnNo="1" Name="Posting Date" Show="false" DataType="1" DataFormat="dd/MM/yyyy" DataFormattingCulture="en-GB" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" />
+      <DataExchColumnDef ColumnNo="2" Name="Sort &amp; Account No." Show="false" DataType="0" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" />
+      <DataExchColumnDef ColumnNo="3" Name="Account Name" Show="false" DataType="0" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" />
+      <DataExchColumnDef ColumnNo="4" Name="Type" Show="false" DataType="0" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" />
+      <DataExchColumnDef ColumnNo="5" Name="Amount" Show="false" DataType="2" DataFormattingCulture="en-GB" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" />
+      <DataExchColumnDef ColumnNo="6" Name="Customer Reference" Show="false" DataType="0" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" />
+      <DataExchColumnDef ColumnNo="7" Name="Transaction Detail" Show="false" DataType="0" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" />
+      <DataExchColumnDef ColumnNo="8" Name="Balance" Show="false" DataType="2" DataFormattingCulture="en-GB" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" />
+      <DataExchMapping TableId="274" Name="LLoyds Bank Pymt Rec Field Mapping" MappingCodeunit="1248">
+        <DataExchFieldMapping ColumnNo="1" FieldID="5" />
+        <DataExchFieldMapping ColumnNo="5" FieldID="7" />
+        <DataExchFieldMapping ColumnNo="6" FieldID="16" Optional="true" />
+        <DataExchFieldMapping ColumnNo="7" FieldID="23" Optional="true" />
+      </DataExchMapping>
+    </DataExchLineDef>
+  </DataExchDef>
+</root>

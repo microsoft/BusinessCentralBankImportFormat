@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <root>
-  <DataExchDef Code="HSBC" Name="HSBC" Type="0" ReadingWritingXMLport="1220" ExternalDataHandlingCodeunit="1240" HeaderLines="1" FileType="1">
-    <DataExchLineDef LineType="0" Code="HSBC" ColumnCount="0">
-      <DataExchColumnDef ColumnNo="1" Name="Date" Show="false" DataType="1" DataFormat="dd MMM yyyy" DataFormattingCulture="en-UK" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" />
+  <DataExchDef Code="HSBC" Name="HSBC Bank Statement" Type="0" ReadingWritingXMLport="1220" ExternalDataHandlingCodeunit="1240" HeaderLines="1" FileType="1">
+    <DataExchLineDef LineType="0" Code="HSBC_DET" Name="HSBC Line Details" ColumnCount="5">
+      <DataExchColumnDef ColumnNo="1" Name="Date" Show="false" DataType="1" DataFormat="dd MMM yyyy" DataFormattingCulture="en-GB" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" />
       <DataExchColumnDef ColumnNo="2" Name="Type" Show="false" DataType="0" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" />
       <DataExchColumnDef ColumnNo="3" Name="Description" Show="false" DataType="0" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" />
-      <DataExchColumnDef ColumnNo="4" Name="Amount" Show="false" DataType="2" DataFormattingCulture="en-UK" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" />
-      <DataExchColumnDef ColumnNo="5" Name="Balance" Show="false" DataType="2" DataFormattingCulture="en-UK" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" />
-      <DataExchMapping TableId="274" Name="HSBC Bank Account Reconciliation" MappingCodeunit="1248">
+      <DataExchColumnDef ColumnNo="4" Name="Amount" Show="false" DataType="2" DataFormattingCulture="en-GB" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" />
+      <DataExchColumnDef ColumnNo="5" Name="Balance" Show="false" DataType="2" DataFormattingCulture="en-GB" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" />
+      <DataExchMapping TableId="274" Name="HSBC Bank Pymt Rec Field Mapping" MappingCodeunit="1248">
         <DataExchFieldMapping ColumnNo="1" FieldID="5" />
-        <DataExchFieldMapping ColumnNo="3" FieldID="23" />
+        <DataExchFieldMapping ColumnNo="3" FieldID="23" Optional="true" />
         <DataExchFieldMapping ColumnNo="4" FieldID="7" />
       </DataExchMapping>
     </DataExchLineDef>
