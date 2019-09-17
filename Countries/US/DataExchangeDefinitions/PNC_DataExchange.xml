@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <DataExchDef Code="PNC" Name="PNC Bank Statement" Type="0" ReadingWritingXMLport="1220" ExternalDataHandlingCodeunit="1240" HeaderLines="1" FileType="1">
+    <DataExchLineDef LineType="0" Code="PNC_DET" Name="PNC Line Detail" ColumnCount="14">
+      <DataExchColumnDef ColumnNo="1" Name="As Of Date" Show="false" DataType="1" DataFormat="M/d/yyyy" DataFormattingCulture="en-US" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" />
+      <DataExchColumnDef ColumnNo="2" Name="Bank ID" Show="false" DataType="0" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" />
+      <DataExchColumnDef ColumnNo="3" Name="Account Number" Show="false" DataType="0" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" />
+      <DataExchColumnDef ColumnNo="4" Name="Account Name" Show="false" DataType="0" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" />
+      <DataExchColumnDef ColumnNo="5" Name="BAI Control" Show="false" DataType="0" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" />
+      <DataExchColumnDef ColumnNo="6" Name="Currency" Show="false" DataType="0" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" />
+      <DataExchColumnDef ColumnNo="7" Name="Transaction" Show="false" DataType="0" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" />
+      <DataExchColumnDef ColumnNo="8" Name="Amount" Show="false" DataType="2" DataFormattingCulture="en-US" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" />
+      <DataExchColumnDef ColumnNo="9" Name="CR/DR" Show="false" DataType="0" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" />
+      <DataExchColumnDef ColumnNo="10" Name="Zero Day Float" Show="false" DataType="2" DataFormattingCulture="en-US" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" />
+      <DataExchColumnDef ColumnNo="11" Name="One Day Float" Show="false" DataType="2" DataFormattingCulture="en-US" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" />
+      <DataExchColumnDef ColumnNo="12" Name="Two Day Float" Show="false" DataType="2" DataFormattingCulture="en-US" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" />
+      <DataExchColumnDef ColumnNo="13" Name="Reference" Show="false" DataType="0" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" />
+      <DataExchColumnDef ColumnNo="14" Name="Description" Show="false" DataType="0" TextPaddingRequired="false" Justification="0" UseNodeNameAsValue="false" />
+      <DataExchMapping TableId="274" Name="PNC Bank Pymt Rec Field Mapping" MappingCodeunit="1248">
+        <DataExchFieldMapping ColumnNo="1" FieldID="5" />
+        <DataExchFieldMapping ColumnNo="7" FieldID="16" />
+        <DataExchFieldMapping ColumnNo="8" FieldID="7" />
+        <DataExchFieldMapping ColumnNo="14" FieldID="23" />
+      </DataExchMapping>
+    </DataExchLineDef>
+  </DataExchDef>
+</root>
